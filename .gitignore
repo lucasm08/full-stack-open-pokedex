@@ -1,2 +1,34 @@
-dist/
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# local data
+/data/local/*
+!/data/local/config.sample.json
+!/data/local/response.sample.json
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#vscode
+**/.vscode/
+
+# version file
+/public/version.json
